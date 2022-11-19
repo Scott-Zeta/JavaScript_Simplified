@@ -2,3 +2,4 @@
 1. recap the basic run script in node and implement in html.
 2. press '!'+ Tab in VScode will give you a auto build basic html page.
 3. remember the quotation in html variable.
+4. npm install -g "gloably" means can be use on any project for entire machine.

@@ -1,1 +1,1 @@
-console.log("Go down hell, World!")
+console.log("Go down hell, World!");
