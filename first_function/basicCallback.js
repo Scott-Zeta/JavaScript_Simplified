@@ -15,7 +15,7 @@ callName("Delta", function (variable) {
   console.log(variable);
 });
 
-// callName(First String parameter: "Delta", 
-//  Second function parameter: function (variable) {console.log(variable);}          
-//          );
-//quit messy
+// callName(   First String parameter: "Delta", 
+//        Second function parameter: function (variable) {console.log(variable);}          
+//          );          (call "callName" end.)
+//quit messy, especially with arrow function
