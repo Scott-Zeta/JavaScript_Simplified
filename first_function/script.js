@@ -13,3 +13,17 @@ function callName(name) {
 }
 
 console.log(callName("Zeta"));
+
+//an arrow function
+
+let printName = (name) => {
+  console.log(name);
+};
+
+printName("Zeta");
+
+//one line arrow function with shortcut
+
+let printHi = name => "Hi " + name
+
+console.log(printHi("Kell"))
