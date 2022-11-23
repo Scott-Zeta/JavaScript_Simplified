@@ -6,3 +6,5 @@
 5. map doesn't modify old array but create a new one
 ## 6. very tricky fact, the parameters in array method order is fixed, such as reduce, first one can only be accumulator(previous value), second can only be cuurent iterating elements
 # I HATE THIS!
+7. reduce method actually calculate(almost any method you like) all elements into one, with a initial value
+8. Js expression can be written inside ${}, and impelement in `string` (backticks) `(template string)`.

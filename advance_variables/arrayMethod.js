@@ -43,3 +43,7 @@ let total = items.reduce((sum, n) => {
   return sum + n.price;
 }, 0);
 console.log("$",total);
+
+const s1 = "aaa"
+const s2 = "bbb"
+console.log(`${s1} ${s2} ${5-3}`)
