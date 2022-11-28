@@ -28,8 +28,34 @@ btn.addEventListener("click", clicked2);
 //remove eventlistener(can not use anoymous)
 btn.removeEventListener("click", clicked2);
 
-const inputbox = document.querySelector('[data-text]')
+const inputbox = document.querySelector("[data-text]");
 
-inputbox.addEventListener('input', e => {
-    console.log(e.target.value === '')
+inputbox.addEventListener("input", (e) => {
+  console.log(e.target.value === "");
+});
+
+//submit a form
+const form = document.querySelector("[data-form]");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(e.target.value);
+});
+
+const test = document.querySelector("[data-test]")
+
+//test.dataset takes all data attributes
+console.log(test.dataset)
+test.dataset.what = "Puff"
+console.log(test.dataset.what)
+
+//count by data attributes and event listener
+const buttons = document.querySelectorAll('button')
+
+buttons.forEach(button =>{
+    button.addEventListener('click',()=>{
+        currentClicks = parseInt(button.dataset.clicks)
+        button.dataset.clicks = currentClicks + 1
+        console.log(currentClicks)
+    })
 })

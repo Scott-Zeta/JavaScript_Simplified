@@ -3,3 +3,4 @@
 (ensure excution after the page rendered, better always use defer)
 3. every browser behaviour is based on window, like window.console.log(), window.alert()
 4. document is the exact html of the page
+5. some strange difference in arrow function and normal scoping. always use arrow function first
