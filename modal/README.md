@@ -1,0 +1,2 @@
+## what did you get?
+In this case, the element's visible actually been controlled by CSS, use classlist by eventlistener to control the class name of HTML elements. So the modal and layout will show/hide with differnet CSS styles
