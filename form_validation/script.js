@@ -36,7 +36,7 @@ form.addEventListener("submit", (e) => {
     console.log("term not checked");
     list.push("term not checkek");
   }
-
+  console.log(errorList)
   if (list.length > 0) {
     showErrors(list);
     e.preventDefault();
@@ -50,7 +50,7 @@ function clearErrors() {
   // I recommend using a while loop to accomplish this task
   // This is the trickiest part of this exercise so if you get stuck and are unable to progress you can also set the innerHTML property of the error-list to an empty string and that will also clear the children. I recommend trying to accomplish this with a while loop, though, for practice.
   // Also, make sure you remove the show class to the errors container
-  while (errorList.children[0] != null) {
+  while (errorList.children[0]) {
     errorList.removeChild(errorList.children[0]);
   }
   errorBox.classList.remove("show");
