@@ -1,5 +1,15 @@
+## remember, only use defer or Async to open JS
+
+You can divide a JS file into modules,(need to import and export). Set the <script>type = "module" src = ...</script>
+module type will automaticlly runs in defer (This idea is from framework)
+
+module can not be access directly in the console. So put object may not a good idea.
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
+
+# LinkedInLearning
+https://www.linkedin.com/learning/javascript-essential-training
 
 ## What the fck is this?
 After I took some React course, I found I spent most of time on syntax. So it is time to step back to some basic JS and Web dev knowledge.
