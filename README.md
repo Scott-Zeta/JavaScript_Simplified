@@ -5,6 +5,30 @@ module type will automaticlly runs in defer (This idea is from framework)
 
 module can not be access directly in the console. So put object may not a good idea.
 
+## access property
+Two type of access
+1. dot format, as the regular java  Object.property
+2. bracket format. Object["PropertyInString"]
+why use this? 
+1. When property is a variable (variable shoudl be String)
+let target = "prop1"
+target = "prop2"
+Object[target]
+2. Sometimes property name may not follow the rule (When dealing with existing code)
+Object["Name+ShouldNotHavePlus"]
+
+## Function inside the object:method
+format:
+const object = {
+functionName(input){
+    this.property = ....;
+    do something;
+}
+}
+excute:
+
+object.functionName(input)
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
