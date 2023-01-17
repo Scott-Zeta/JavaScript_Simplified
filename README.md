@@ -29,6 +29,10 @@ excute:
 
 object.functionName(input)
 
+## Atention, Arrow function can not be used for method inside the class
+Arrow functions don't have their own bindings to this , arguments , or super , and should not be used as methods. Arrow functions cannot be used as constructors. Calling them with new throws a TypeError . They also don't have access to the new.target keyword.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
