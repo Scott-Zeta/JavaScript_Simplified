@@ -34,8 +34,8 @@ Arrow functions don't have their own bindings to this , arguments , or super , a
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 ## Template Literal
-content = `.......` surronded by `
-const content = `
+content = `.......` surronded by " ` "
+const content = ``
   <main>
     <article>
       <h1>${everydayPack.name}</h1>
@@ -50,7 +50,7 @@ const content = `
       </ul>
     </article>
   </main>
-`;
+``;
 
 document.body.innerHTML = content;
 Inject into the innerHTML, JS variable surrounded with ${}
