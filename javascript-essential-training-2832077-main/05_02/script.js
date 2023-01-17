@@ -49,3 +49,6 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+document.querySelector(".backpack__strap")
+document.querySelector(".backpack__image")
