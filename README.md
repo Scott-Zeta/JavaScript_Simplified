@@ -33,6 +33,29 @@ object.functionName(input)
 Arrow functions don't have their own bindings to this , arguments , or super , and should not be used as methods. Arrow functions cannot be used as constructors. Calling them with new throws a TypeError . They also don't have access to the new.target keyword.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
+## Template Literal
+content = `.......` surronded by `
+const content = `
+  <main>
+    <article>
+      <h1>${everydayPack.name}</h1>
+      <ul>
+        <li>Volume: ${everydayPack.volume}</li>
+        <li>Color: ${everydayPack.color}</li>
+        <li>Age: ${everydayPack.backpackAge()}</li>
+        <li>Number of pockets: ${everydayPack.pocketNum}</li>
+        <li>Left strap length: ${everydayPack.strapLength.left}</li>
+        <li>Right strap length: ${everydayPack.strapLength.right}</li>
+        <li>Lid status: ${everydayPack.lidOpen}</li>
+      </ul>
+    </article>
+  </main>
+`;
+
+document.body.innerHTML = content;
+Inject into the innerHTML, JS variable surrounded with ${}
+ 
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
