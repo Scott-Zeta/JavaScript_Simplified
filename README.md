@@ -66,6 +66,7 @@ sometimes you want to use different function to deal with some same input data, 
 
 ## forEach() and map()
 both of them can iterate an array. But as recommended, if you want to create a new array/other stuff and return something, use map(). If only want to iterate array and do sometthing, use forEach() is better.
+More official description: "array.forEach() executes a provided callback function once for each item in the array. array.map() creates a new array with the results of executing a provided callback function once for each item in the original array."
 
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
