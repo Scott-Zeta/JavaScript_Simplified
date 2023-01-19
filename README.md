@@ -56,7 +56,13 @@ const content = `
 
 document.body.innerHTML = content;
 Inject into the innerHTML, JS variable surrounded with ${}
- 
+
+## Call back
+What is call back?
+pass a function as a parameter to another function
+
+Why should I use it? I can call the function directly
+sometimes you want to use different function to deal with some same input data, then you could easily change which function to use as the parameter in the main function.
 
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
