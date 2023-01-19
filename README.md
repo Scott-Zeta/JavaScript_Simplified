@@ -64,6 +64,9 @@ pass a function as a parameter to another function
 Why should I use it? I can call the function directly
 sometimes you want to use different function to deal with some same input data, then you could easily change which function to use as the parameter in the main function.
 
+## forEach() and map()
+both of them can iterate an array. But as recommended, if you want to create a new array/other stuff and return something, use map(). If only want to iterate array and do sometthing, use forEach() is better.
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
