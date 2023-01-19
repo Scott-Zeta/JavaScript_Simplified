@@ -5,7 +5,7 @@
  * - Set the inner HTML of the article to the existing HTML output provided in const content.
  * - Append each backpack object to the <main> element.
  */
-import Backpack from "./components/Backpack.js";
+//import Backpack from "./components/Backpack.js";
 import backpackObjectArray from "./components/data.js"
 
 // const backPack = new Backpack(
@@ -94,5 +94,9 @@ const content = backpackObjectArray.map((backPack) =>{
     }</span></li>
   </ul>
 `;
-  main.append(newArticle)
+  return newArticle
+})
+
+content.forEach((article) =>{
+  main.append(article)
 })
