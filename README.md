@@ -32,6 +32,7 @@ object.functionName(input)
 ## Atention, Arrow function can not be used for method inside the class
 Arrow functions don't have their own bindings to this , arguments , or super , and should not be used as methods. Arrow functions cannot be used as constructors. Calling them with new throws a TypeError . They also don't have access to the new.target keyword.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+class can also extend for more properties and a new constructor Get/Set method like Java
 
 ## Template Literal
 ```
@@ -56,6 +57,7 @@ const content = `
 
 document.body.innerHTML = content;
 Inject into the innerHTML, JS variable surrounded with ${}
+You can also use this for raw String, like f"String" in python
 
 ## Call back
 What is call back?
