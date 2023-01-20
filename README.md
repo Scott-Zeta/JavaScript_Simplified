@@ -76,6 +76,30 @@ See Async comparison about
 2. return , then() chained Async
 3. Async and Await easier for understanding and reading Async
 
+## Search for String
+startsWith(), endsWith(), includes() can be used(case sensitive). search() similar with includes, but will return the first index when input shows up
+
+## Spread operator: ... Three dots
+means duplicate all(remain) elements in the array or object
+easily for concatenate the array and object
+Eg. a = [a1,a2]; b = [b2,b3]
+c = [...a, ...b, c1 ,c2] === [a1,a2,b1,b2,c1,c2] 
+
+## Destruction objects
+You can only pass properties with what you need in the object. By using {p1,p2...}
+Eg. 
+```
+const peter = {name: peter,
+              height: 180,
+              weight: 80,
+              blood presure: 800
+}
+const overweightTest = ({height,weight}) => {
+    return weight/height**2 > 25
+}
+
+overweight(peter)
+```
 
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
