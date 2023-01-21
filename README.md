@@ -103,6 +103,10 @@ const overweightTest = ({height,weight}) => {
 overweight(peter)
 ```
 
+## Global variable and strict mode
+If assign a varibale without declare it. It will automaticly become a global variable even inside a function black
+To prevent this, add 'use strict' at the head of script. It will give an error when trying to do this.
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
