@@ -107,6 +107,12 @@ overweight(peter)
 If assign a varibale without declare it. It will automaticly become a global variable even inside a function black
 To prevent this, add 'use strict' at the head of script. It will give an error when trying to do this.
 
+## CSS?
+There are three method to implement CSS
+1. External (Don't use @import method, since it slow down loading because it can not download parallel)
+2. Inline (Messy, but it can overwrite other method)
+3. Internal (between <head><style></style></head>. Use only for short block for one page)
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
