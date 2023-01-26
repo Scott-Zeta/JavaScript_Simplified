@@ -110,8 +110,52 @@ To prevent this, add 'use strict' at the head of script. It will give an error w
 ## CSS?
 There are three method to implement CSS
 1. External (Don't use @import method, since it slow down loading because it can not download parallel)
+  like 
+  ```
+  <head><link rel="styleSheet" href="css/style.css"></head>
+  ```
 2. Inline (Messy, but it can overwrite other method)
-3. Internal (between <head><style></style></head>. Use only for short block for one page)
+3. Internal (between ```<head><style></style></head>```. Use only for short block for one page)
+
+## CSS selector
+1. type selector
+```
+* {
+  (astroid for all elements)
+}
+h1 {
+  (for all h1 headline)
+}
+```
+2. class selector
+```
+.classname {
+  (for all with same class)
+}
+```
+
+one HTML element can have multiple class, such as
+```
+<p class = "section1">A<\p>
+<p class = "group1">B<\p>
+<p class = "section1 group1">C<\p>
+```
+
+select by chain up class name:
+```
+.section1 {
+  (will select A and B)
+}
+.group1 {
+  (will select B and C)
+}
+.section1.group1{
+  (will only select C)
+}
+.section1,.group1{
+  (will select A,B,C all)
+}
+```
 
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
