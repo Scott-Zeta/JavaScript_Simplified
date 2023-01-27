@@ -149,13 +149,69 @@ select by chain up class name:
 .group1 {
   (will select B and C)
 }
-.section1.group1{
+.section1 .group1{
   (will only select C)
 }
 .section1,.group1{
   (will select A,B,C all)
+  (, grouping selector, element beside the comma are independent each other)
 }
 ```
+3. ID selector
+```
+#ID {
+  (select the element with this ID)
+}
+```
+Alert, ID selector can be only called once
+Additional:
+Anchor tag: ID selector can be used in link to scroll to that element
+```
+<a href = "#ID">Go to the spot with ID</a>
+<p id ="ID">target</p> 
+```
+4. Advance: Descendant Selector
+```
+<section class="container">
+	<p><a href="#">A</a></p>
+	<a href="#">B</a>
+</section>
+
+<a href="#">C</a>
+```
+```
+a {
+/*   color: black; */
+(select ABC)
+}
+section a {
+/*   color: green; */
+(select A and B, decendent selector will skip level, so all link contained in the section)
+}
+.container a {
+/*   color: orange; */
+(A and B, as the same but use id)
+}
+section p a {
+/*   color: pink; */
+(Only A, it has a complete path)
+}
+.container p a {
+/*   color: green; */
+(same)
+}
+```
+5. Hierarchy Specificity
+overwrite flow ID => class => type => universal
+"font-size: 10px!important" will overwrite all specificity
+
+6. Advance: Pseudo-class selector
+```
+a:link (a link has not been clicked default blue)
+a:visited (a linke has been clicked default purple)
+a:hover
+a:active(when clicking on it)
+a:focus(use tab to focus, default is a rectangle around the link)
 
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
