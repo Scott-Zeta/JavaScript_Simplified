@@ -231,6 +231,29 @@ center algin:
   margin: 0 auto;
 }
 ```
+
+## Static Method?
+a method define in a class by static, means this method can be called by the className, but can not be called by the object that was created by that class.
+```
+class MyClass {
+  static myStaticMethod(instance) {
+    console.log(instance); 
+  }
+}
+
+const myInstance = new MyClass();
+MyClass.myStaticMethod(myInstance);  // it will print the instance
+```
+```
+class MyClass {
+  static myStaticMethod() {
+    console.log("This is a static method.");
+  }
+}
+
+const myInstance = new MyClass();
+myInstance.myStaticMethod();  // TypeError: myInstance.myStaticMethod is not a function
+```
 ## Comment and categorization
 It is a good habit to use comment to put HTML and CSS into different categories. Easy to manage
 

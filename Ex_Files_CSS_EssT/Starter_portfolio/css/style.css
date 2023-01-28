@@ -12,10 +12,13 @@ a {
 a:hover{
     text-decoration: none;
 }
-
+h2 {
+    margin:0;
+}
 .content-wrap{
     width: 800px;
     margin: 0 auto;
+    padding: 60px 0;
 }
 /* Profile */
 header {
@@ -36,6 +39,7 @@ header {
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects a:hover{
     background: rgba(47, 48, 97, 80%)
