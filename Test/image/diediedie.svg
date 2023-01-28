@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200" height="100" viewBox="0 0 200 100" xml:space="preserve">
 <desc>Created with Fabric.js 5.2.4</desc>
 <defs>
 </defs>
-<g transform="matrix(1 0 0 1 540 540)" id="67cc8bc6-86b0-4d6b-a9fb-842710bed935"  >
-<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+<g transform="matrix(1 0 0 1 100 50)" id="48bd9b8c-fc4c-47f2-aa69-723e05d15bad"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-100" y="-50" rx="0" ry="0" width="200" height="100" />
 </g>
-<g transform="matrix(1 0 0 1 540 540)" id="a8f2456a-3bd4-4db4-8e90-5732b5d0e46a"  >
+<g transform="matrix(Infinity NaN NaN Infinity 0 0)" id="3a3cf9f9-7a1b-4554-aa01-64761482f069"  >
 </g>
-<g transform="matrix(1.21 0 0 2.47 503.97 157.43)" style="" id="f338a54c-dfe2-4118-841e-452ae45157f5"  >
-		<text xml:space="preserve" font-family="Raleway" font-size="105" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(246,3,3); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-85.58" y="32.98" >DIE</tspan></text>
+<g transform="matrix(0.68 0 0 0.8 100 50)" style="" id="d5d18745-64a0-460d-b98e-fca46503b75d"  >
+		<text xml:space="preserve" font-family="Raleway" font-size="105" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(244,5,5); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-86.1" y="32.98" >D</tspan><tspan x="-10.39" y="32.98" >I</tspan><tspan x="23.42" y="32.98" >E</tspan></text>
 </g>
 </svg>
