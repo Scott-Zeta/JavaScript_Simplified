@@ -212,6 +212,27 @@ a:visited (a linke has been clicked default purple)
 a:hover
 a:active(when clicking on it)
 a:focus(use tab to focus, default is a rectangle around the link)
+```
+## Inline, block, display
+1. set Inline or block display as inline-block]
+```
+span/div {
+  display: inline-block
+}
+```
+can make it show as the block side by side like a line but implement the height and width like a block
+But inline does not have top and buttom margin, but can use inline-block instead
+2. margin collapse
+bottom margin will overlap with next element's top margin
+center algin:
+```
+.example {
+  width:500px;
+  margin: 0 auto;
+}
+```
+## Comment and categorization
+It is a good habit to use comment to put HTML and CSS into different categories. Easy to manage
 
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
