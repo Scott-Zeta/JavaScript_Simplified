@@ -254,6 +254,31 @@ class MyClass {
 const myInstance = new MyClass();
 myInstance.myStaticMethod();  // TypeError: myInstance.myStaticMethod is not a function
 ```
+
+## Getter and Setter?
+Be aware, Getter and Setter are not regular method, but property accessors, so call them without parentheses
+Eg:
+```
+class MyClass {
+  constructor(brand) {
+    this._brand = brand;
+  }
+  get brand() {
+    return this._brand;
+  }
+  set brand(value) {
+    this._brand = value;
+  }
+}
+
+let myObj = new MyClass("Tesla");
+console.log(myObj.brand); // "Tesla"
+myObj.brand = "Mercedes";
+console.log(myObj.brand); // "Mercedes"
+console.log(myObj.brand()); // TypeError: myObj.brand is not a function
+```
+And Setter and Getter must use the same name as the property's name
+
 ## Comment and categorization
 It is a good habit to use comment to put HTML and CSS into different categories. Easy to manage
 
