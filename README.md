@@ -189,6 +189,9 @@ Alert:
 3. no trailing comma (comma after last pair)
 4. no comments
 
+## convert
+1. decompress JSON String to structure: ```JSON.parse(String)``` for program processing
+2. compress structure to JSON String:```JSON.stringfy(Structure)```for http transfer
 
 # CSS
 
