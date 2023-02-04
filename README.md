@@ -197,6 +197,26 @@ Alert:
 ## schema
 schema is like a kind of template to check the recieve JSON is valid or not. Although build validation testing on client-end is better idea for resource usage and experience. Schema can provide security protection to prevent server-end from invalid data.(local validation can be skipped by attacker)
 
+## JSON-LD
+A standard style of JSON, provide such like standard key name. Good for JSON data communication between different apps and websites.
+You can choose use JSON-LD or not. If want to implement it on legacy JSON, can use data map inside JSON.
+A typicak JSON-LD with map
+```
+{
+  "@context": {
+    "@vocab": "https://www.schema.org",
+    "company": "name",
+    "website": "url",
+    "image": "logo",
+    "overview": "description"
+  },
+  "company": "h+ Sport",
+  "website": "https://hplussport.com",
+  "image": "https://hplussport.com/wp-content/uploads/2017/04/H-logo_470x271.png",
+  "overview": "H+ Sport is dedicated to creating eco-friendly, high-quality, nutrient-rich, nutritional products that enhance active lifestyles. In addition, our H+ Sport Active clothing line is made to be functional, stylish, comfortable, and durable, using all natural and organic fibers."
+}
+```
+
 # CSS
 
 ## CSS?
