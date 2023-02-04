@@ -1,3 +1,5 @@
+# JavaScript
+
 ## remember, only use defer or Async to open JS
 
 You can divide a JS file into modules,(need to import and export). Set the <script>type = "module" src = ...</script>
@@ -106,6 +108,81 @@ overweight(peter)
 ## Global variable and strict mode
 If assign a varibale without declare it. It will automaticly become a global variable even inside a function black
 To prevent this, add 'use strict' at the head of script. It will give an error when trying to do this.
+
+## Static Method?
+a method define in a class by static, means this method can be called by the className, but can not be called by the object that was created by that class.
+```
+class MyClass {
+  static myStaticMethod(instance) {
+    console.log(instance); 
+  }
+}
+
+const myInstance = new MyClass();
+MyClass.myStaticMethod(myInstance);  // it will print the instance
+```
+```
+class MyClass {
+  static myStaticMethod() {
+    console.log("This is a static method.");
+  }
+}
+
+const myInstance = new MyClass();
+myInstance.myStaticMethod();  // TypeError: myInstance.myStaticMethod is not a function
+```
+
+## Getter and Setter?
+Be aware, Getter and Setter are not regular method, but property accessors, so call them without parentheses
+Eg:
+```
+class MyClass {
+  constructor(brand) {
+    this._brand = brand;
+  }
+  get brand() {
+    return this._brand;
+  }
+  set brand(value) {
+    this._brand = value;
+  }
+}
+
+let myObj = new MyClass("Tesla");
+console.log(myObj.brand); // "Tesla"
+myObj.brand = "Mercedes";
+console.log(myObj.brand); // "Mercedes"
+console.log(myObj.brand()); // TypeError: myObj.brand is not a function
+```
+And Setter and Getter must use the same name as the property's name
+
+## Comment and categorization
+It is a good habit to use comment to put HTML and CSS into different categories. Easy to manage
+
+# JSON
+## What?
+JSON stands for JavaScript Object Notation
+Use in data exchange, like API request and response
+
+## Why JSON?
+Old tools: XML
+```
+<country>
+<name>Thailand</name>
+<capital>Bangkok</capital>
+</country>
+```
+JSON:
+```
+{
+  "name":"Thailand"
+  "capital":"Bangkok"
+}
+```
+1. less bytes, fast transfer
+2. easy to read
+
+# CSS
 
 ## CSS?
 There are three method to implement CSS
@@ -231,56 +308,6 @@ center algin:
   margin: 0 auto;
 }
 ```
-
-## Static Method?
-a method define in a class by static, means this method can be called by the className, but can not be called by the object that was created by that class.
-```
-class MyClass {
-  static myStaticMethod(instance) {
-    console.log(instance); 
-  }
-}
-
-const myInstance = new MyClass();
-MyClass.myStaticMethod(myInstance);  // it will print the instance
-```
-```
-class MyClass {
-  static myStaticMethod() {
-    console.log("This is a static method.");
-  }
-}
-
-const myInstance = new MyClass();
-myInstance.myStaticMethod();  // TypeError: myInstance.myStaticMethod is not a function
-```
-
-## Getter and Setter?
-Be aware, Getter and Setter are not regular method, but property accessors, so call them without parentheses
-Eg:
-```
-class MyClass {
-  constructor(brand) {
-    this._brand = brand;
-  }
-  get brand() {
-    return this._brand;
-  }
-  set brand(value) {
-    this._brand = value;
-  }
-}
-
-let myObj = new MyClass("Tesla");
-console.log(myObj.brand); // "Tesla"
-myObj.brand = "Mercedes";
-console.log(myObj.brand); // "Mercedes"
-console.log(myObj.brand()); // TypeError: myObj.brand is not a function
-```
-And Setter and Getter must use the same name as the property's name
-
-## Comment and categorization
-It is a good habit to use comment to put HTML and CSS into different categories. Easy to manage
 
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
