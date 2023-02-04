@@ -182,6 +182,14 @@ JSON:
 1. less bytes, fast transfer
 2. easy to read
 
+## syntax
+Alert:
+1. JSON key and value(string) must surround by double quotes
+2. no number start with 0
+3. no trailing comma (comma after last pair)
+4. no comments
+
+
 # CSS
 
 ## CSS?
