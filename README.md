@@ -190,8 +190,9 @@ Alert:
 4. no comments
 
 ## convert
-1. decompress JSON String to structure: ```JSON.parse(String)``` for program processing
+1. decompress JSON String to structure: ```JSON.parse(String)``` for program processing/web page rendering
 2. compress structure to JSON String:```JSON.stringfy(Structure)```for http transfer
+3. sometimes you may need convert from other data type, like xml. use different type of library, may needs adjustment if data not in standard
 
 # CSS
 
