@@ -194,6 +194,9 @@ Alert:
 2. compress structure to JSON String:```JSON.stringfy(Structure)```for http transfer
 3. sometimes you may need convert from other data type, like xml. use different type of library, may needs adjustment if data not in standard
 
+## schema
+schema is like a kind of template to check the recieve JSON is valid or not. Although build validation testing on client-end is better idea for resource usage and experience. Schema can provide security protection to prevent server-end from invalid data.(local validation can be skipped by attacker)
+
 # CSS
 
 ## CSS?
