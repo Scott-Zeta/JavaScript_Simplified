@@ -45,7 +45,7 @@ const updateError = (error) =>{
 //     httpRequest.send()
 // }
 
-const hanleErrors = function (response) {
+const handleErrors = function (response) {
     //fetch success condition different with AJAX
     if(!response.ok){
         throw (response.status + ': ' + response.statusText)
@@ -54,9 +54,10 @@ const hanleErrors = function (response) {
 }
 
 const createRequest = function(url){
+    //every fetch then needs a return to pass data to next step
     fetch(url)
         //fetch response is not plan json, so need to convert
-        .then((response) => hanleErrors(response))
+        .then((response) => handleErrors(response))
         //after convert, it is a json node but not a json string, so don't need to JSON.parse() agian.
         .then((data) => updateUISuccess(data))
         .catch((error) => updateError(error))
