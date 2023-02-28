@@ -19,7 +19,7 @@ const responseMethod = function(httpRequest) {
             updateError(httpRequest.status+": "+ httpRequest.responseText)
         }
     }else{
-        console.error("ReadyState: " + httpRequest.readyState)
+        console.log("ReadyState: " + httpRequest.readyState)
     }
 }
 
