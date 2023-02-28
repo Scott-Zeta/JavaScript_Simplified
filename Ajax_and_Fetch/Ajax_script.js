@@ -2,8 +2,18 @@
 
 const url = "https://developer.nps.gov/api/v1/parks?stateCode=ca&api_key=39SBa6EygP38f6E30TfpuL3daSd2xu4FpgVoe0LQ"
 
+//save the potentional selected area in advance can save resource compare with select them when executing functions
+const park = document.querySelector("#name")
+// let parkLink = park.getAttribute("href")
+const description = document.querySelector("#description")
+
 const updateUISuccess = (data) =>{
-    console.log(data)
+    const parseData = JSON.parse(data)
+    console.log(parseData)
+    const random = Math.floor(Math.random() * (parseData.total - 1))
+    park.textContent = parseData.data[random].fullName
+    park.href = parseData.data[random].url
+    description.textContent = parseData.data[random].description
 }
 
 const updateError = (error) =>{
