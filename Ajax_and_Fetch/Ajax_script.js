@@ -44,4 +44,4 @@ const createRequest = function(url){
     httpRequest.send()
 }
 
-createRequest(url);
+window.addEventListener("DOMContentLoaded", createRequest(url))
