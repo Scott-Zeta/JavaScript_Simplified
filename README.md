@@ -344,6 +344,32 @@ center algin:
 }
 ```
 
+## Flex and Grid
+No one use stupid float anymore!
+Flexbox for one dimensional(row or coloumn)
+Grid for two dimensional
+
+## Flex box
+```
+<div class="contianer">
+.container{
+  display: flex /inline-flex
+  flex-direction: row/row-reverse, column/column-reverse (parallel or vertical layout)
+  flex-wrap: nowrap/wrap (nowrap: items would fill a line if not enough, shrikn if more. wrap: extra item will go to next row)
+  align-items:center
+  justify-content:center (the layout of item inside, change the distribute but not the size of item)
+}
+```
+Change the way of flex box container, inline-flex like text, change to new line until previous one full
+flex only on one axis like up to down
+```
+.flex-item {
+  flex-grow: 0~1(default 0), no expand to auto fill if there is extra space
+  flex-shrink: 0~1(default 1), auto shrink to fit the line or overflow
+  flex-basis: x px, ideal size of each value 
+}
+```
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
