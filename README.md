@@ -370,6 +370,17 @@ flex only on one axis like up to down
 }
 ```
 
+## Grid
+new unit: fr, represent a fraction of available space in the grid container (flexible)
+```
+.container{
+  display: grid;
+  grid-template-columns/row: 1fr 2fr 1fr (seperate the page in column/row 1:2:1); 50px repeat(2,1fr) (first 50px, then 2 equal frame take the rest)
+  gap: 10px 20px(or %);(gap between each elements in row column)
+  grid-auto-rows/columns: 200px; (for implicit rows/columns, if not defined in above, it will follow this as default, good for dynamic content)
+}
+```
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
