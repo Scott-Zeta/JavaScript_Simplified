@@ -381,6 +381,37 @@ new unit: fr, represent a fraction of available space in the grid container (fle
 }
 ```
 
+## Advance Selector
+1. descendant selector: every decendants belongs to ancestor
+```
+.class p{
+ (this select every <p> inside class)
+}
+```
+2. child selector: only select the child directly belongs to the parent
+```
+.class > p{
+  (if therei s div inside the class and include the p, it won't be selected)
+}
+```
+3. Sibling combinators
+```+``` for adjacent one and ```~``` for general follow
+adjacent sibling must adjacent on code
+```
+<h1></h1>
+<p>1<p>
+<p>2<p>
+<div></div>
+<p>3<p>
+
+h1 + p{
+  select 1
+}
+h1 ~ p{
+  select 1,2,3
+}
+```
+
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
