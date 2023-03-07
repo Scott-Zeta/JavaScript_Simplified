@@ -17,7 +17,9 @@ h2 {
   margin: 0;
 }
 .content-wrap {
-  width: 800px;
+  max-width: 800px;
+  width: 85%;
+  /* it will spanning 85% leave some room in the edge(what ever the window's size, only take the 85%) */
   margin: 0 auto;
   padding: 60px 0;
 }
@@ -77,6 +79,15 @@ header {
   column-gap: 20px;
 }
 /* Education */
+.education {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p{
+    width: 60%;
+}
 
 /* Contact Info */
 footer {
@@ -94,4 +105,9 @@ footer {
 .contact-list a {
   padding: 15px;
   display: inline-block;
+}
+
+/* Responsive */
+@media screen and (min-width:750px){
+
 }

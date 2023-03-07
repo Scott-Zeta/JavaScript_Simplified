@@ -412,6 +412,29 @@ h1 ~ p{
 }
 ```
 
+## Responsive Web Design(RWD)
+1. Fluid layout
+With percentage and max and min width and height
+2. Flexible images
+typical flexible background image
+```
+.background{
+  background-color: light blues;
+  backgroun-image: url...;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+```
+3. Media queries
+edit css on specific constions
+apply this css if the browser view port less than 1000px else ignored:
+```
+@media`define rule` screen`media type` and (max-width: 1000px)`mediafeature`{
+  h1 {
+    font-size: 16px;
+  }
+}
+```
 # JavaScript_Simplified
 https://courses.webdevsimplified.com/
 
